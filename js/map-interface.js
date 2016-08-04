@@ -1,10 +1,7 @@
-// 
-// $(document).ready(function() {
-//   var map;
-//     function initMap() {
-//       map = new google.maps.Map(document.getElementById('map'), {
-//       center: {lat: 45.5231, lng: 122.6765},
-//       zoom: 8
-//     });
-//   }
-// });
+var apiKey = require('./../.env').apiKey;
+var Map = require('./../js/map.js').mapModule;
+
+$(document).ready(function() {
+  var portlandMap = new Map();
+  portlandMap.displayMap();
+});

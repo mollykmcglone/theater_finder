@@ -5,27 +5,11 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDguHyzFv-BDYwATQe4a_BD6baKLvuyRbw&callback=initMap"></script>
+    <script src="http://maps.google.com/maps/api/js?&key=AIzaSyDzr2qQpC76zH0BiUqBnkS72lBwN67Op5E"></script>
     <title>Theater Finder</title>
   </head>
-  <body>
-    <div class="container">
-      <div id="map"></div>
-      <script>
-        var map;
-        function initMap() {
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 45.523375, lng: -122.676207},
-            zoom: 12
-          });
-        }
-      </script>
-      <h1>Theater Finder</h1>
-      <label for="name">Search for a theater in Portland by name:</label>
-      <input id="name" type="text">
-      <button class="btn-success" id="theaterName">Get Something!</button>
-      <div class="showTheater"></div>
-    </div>
+  <body class="container">
+    <h1>Movie Theaters in Portland</h1>
+    <div id="map"></div>
   </body>
 </html>
